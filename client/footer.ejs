@@ -1,0 +1,8 @@
+    </div>
+</body>
+
+<% if (typeof scripts !== 'undefined' && scripts !== null && scripts.length > 0) {
+    for (var i = 0; i < scripts.length; i++) { %>
+    <script src="<%= scripts[i] %>" > </script> 
+    <% }
+} %>

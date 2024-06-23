@@ -1,0 +1,54 @@
+tasks:
+	– Learn bootstrap on W3 schools and apply the newly learned skills to client UI
+	– Implement flash
+	– chat selector ui
+	– 
+	
+	
+
+express:
+const express = require('express'); //include package
+const app = express(); //intialize app
+app.get('/', (req, res, next) => {
+	... //this happens when a user GETs /
+});
+app.post('/', (req, res, next) => {
+	... //this happens when a user POSTs /
+});
+const server = app.listen(port#, () {
+	//some console printout; starts website server on port#
+});
+
+
+
+express routers:
+Allows organization of routes and middleware functions into modular pieces of code.
+const router = express.Router(); //initialize router
+// Define routes
+router.get('/', (req, res) => {
+    // GET /
+});
+router.post('/users', (req, res) => {
+    // POST /users
+});
+module.exports = router;
+
+//in server.js
+const (router name) = require('./path/to/router/file');
+app.user('/web/path/to/mount/router', (router name));
+
+
+
+sockets:
+
+
+
+bcrypt password hashing:
+
+
+
+EJS templates:
+
+
+
+Bootstrap:

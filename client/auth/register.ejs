@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./header.ejs'); %>
+    <body>
+        <h1>Register Page</h1>
+        <div class="card"><div class="card-body">
+            <form>
+                <div class="error" style="background-color: red;"></div><br />
+                <label for="username">Username</label><br />
+                <input type="text" id="user" required /><br />
+                <label for="password">Password</label><br />
+                <input type="password" id="pass1" required /><br />
+                <label for="password">Confirm Password</label><br />
+                <input type="password" id="pass2" required /><br />
+                <input type="submit" class="btn btn-primary" value="register" /><br />
+            </form>
+        <p>Already registered? <a href="/auth/login">Login</a> </p>
+        </div></div>
+    </body>
+    <%- include('./footer.ejs'); %>
+</html>

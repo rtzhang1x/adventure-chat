@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./header.ejs'); %>
+
+    <body>
+        <div class="container inbox">
+            <div class="inbox__people">
+                <h4>Active users</h>
+            </div>
+            <div class="inbox__messages">
+                <table class="table table-striped">
+                    <thead><tr><th></th></tr></thead>
+                    <tbody class="messages__history"></tbody>
+                </table>
+                <div class="fallback"></div>
+            </div>
+            <form class="message_form">
+                <input type="text" class="message_form__input" placeholder="Type a message" />
+                <button class="btn btn-primary message_form__button" type="submit" disabled>Send</button>
+            </form>
+        </div>
+    </body>
+    <%- include('./footer.ejs'); %>
+</html>
